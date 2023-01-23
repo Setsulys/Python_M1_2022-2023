@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                FFFF
+            </title>
+            <meta charset="utf-8">
+            <style>
+                label{display: table-cell;}
+                input{display: table-cell; border-radius: 5px;}
+                input[type=submit]:hover{background-color:limegreen ;}
+                input[type=reset]:hover{background-color:crimson ;}
+                .square {background-color:rgb(166, 177, 174); width: 50%;height: auto; border-radius: 10px;}
+                body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+            </style>
+        </head>
+
+        <body>
+            
+            <center>
+            <div class="square">
+                <h1>Fédération Française de Friture à Froid</h1>
+            <form style="display: inline-block; text-align:center" action="cgi-bin/register.cgi" method="POST" onsubmit="return false">
+                <label>Nom</label>
+                <input type="text" name="nom" size="16"/><br>
+                <label>prénom</label>
+                <input type="text" name="prénom" size="16"/><br>
+                <label>Email</label>
+                <input type="text" name="Email" size="16"/><br>
+                <label>Société</label>
+                <input type="text" name="Société" size="16"/><br>
+                <label>Téléphone</label>
+                <input type="text" name="Téléphone" size="16"/><br>
+                <label>Arrivée</label>
+                <input type="datetime-local" name="Arrivée" min="2000-01-01T00:00" max="2050-01-01T00:00"/><br>
+                <label>Départ</label>
+                <input type="datetime-local" name="Départ" min="2000-01-01T00:00" max="2050-01-01T00:00"/><br><br>
+                <input TYPE="reset" VALUE=" Reset " />
+                <input TYPE="submit" VALUE=" Envoyer " onclick="this.form.submit(  )" />
+            </form>
+            <br>
+        </square>
+        </center>
+        
+        </body>
+    </html>
